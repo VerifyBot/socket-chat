@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.35/dayjs.min.js" integrity="sha512-nG86d7fodOg4f3fZF796WwIj6WwxdWI2DCXCarXZU05/UNHzC2CHQkD6dNdj6Ahaurrbed66rsvTt6r58RQ5WA==" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="online-users-container">Online Users: <div id="online-count"></div></div>
+      <div class="messages-container">
+        <p>Messages</p>
+        <ul id="messages"></ul>
+      </div>
+      <div class="input-container">
+        <input type="text" id="msg" placeholder="Enter your message here..." autocomplete="off" spellcheck="false">
+      </div>
+      <button type="submit" id="send">Send</button>
+    </div>
+
+  </body>
+</html>
