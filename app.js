@@ -51,14 +51,3 @@ function createMessage(content, date, author) {
   $('#messages').append(`<li class="msg${isMe ? ' me' : ''}"><span class="date">${date}</span><span class="text"></span></li>`);
   $('.msg .text').last().text(content);
 }
-
-// $('form').submit(function () {
-//   socket.emit('chat message', $('#m').val());
-//   $('#m').val('');
-//   return false;
-// });
-
-// socket.on('chat message', function (msg) {
-//   $('#messages').append($('<li>').text(msg));
-//   window.scrollTo(0, document.body.scrollHeight);
-// });
